@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right,rgb(236, 23, 236),rgb(245, 174, 41));
+}
+
+.top{
+    margin-top: 5px;
+}
+
+.top > h1{
+    text-align: center;
+    font-size: xx-large;
+    text-shadow: 2px 2px black;
+    color: whitesmoke;
+}
+
+.legend{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding-left: 10px;
+
+}
+
+
+.legend > input[type="text"]{
+    flex: 1;
+    height: 2.7rem;
+    background-color: #edeef0;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+.legend > button{
+    border-color: rgb(175, 84, 84);
+    border-width: 5px;
+    background-color: #f00;
+    width: 100px;
+    border-radius: 10px;
+}
+
+
+.box{
+    width: 45%;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px black;
+}
+
+.notes{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.notes>ol{
+    list-style-type: none;
+}
+
+.notes>ol>li{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-left: 30px;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    border-radius: 15px;
+    box-shadow: 2px 2px black;
+    background-color: rgb(183, 213, 240);
+    row-gap: 2px;
+    flex-direction: row;
+    margin: 5px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+
+ol li span{
+    width: 45px;
+    height: 2.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: bisque;
+    box-shadow: 2px 2px black;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 3px ;
+    text-align: center;
+}
+
+ol>li span:nth-child(1) {
+    margin-right: auto;
+    flex: 1;
+    flex-wrap: wrap;
+    word-wrap: wrap;
+    text-align: left;   
+    padding-left: 10px;
+    margin-left: 5px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    height: auto;
+}
+
+ol li span:nth-child(1):hover{
+    background : transparent;
+}
+
+ol li span:nth-child(2):hover{
+    background-color: #edeef0;
+}
+
+ol li span:nth-child(2) {
+    margin-left: auto;
+}
+
+ol li span:hover{
+    background-color: #edeef0;
+}
+
+
+
+
+
+
+
+
