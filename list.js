@@ -111,15 +111,7 @@ function shareTask(shareButton) {
 showdata();
 
 
-const taskLists = document.querySelectorAll('.listdata');
 let dragItem = null;
-
-// taskLists.addEventListener((taskList) => {
-//     taskList.addEventListener('dragstart', handleDragStart);
-//     taskList.addEventListener('dragover', handleDragOver);
-//     taskList.addEventListener('dragstart', handleDrop);
-
-// })
 
 listContainer.addEventListener('dragstart',handleDragStart);
 listContainer.addEventListener('dragover',handleDragOver);
@@ -148,5 +140,6 @@ function handleDrop(event) {
     else {
         listContainer.insertBefore(dragItem, targetItem.nextSibling);
     }
+    savedata();
 }
 
